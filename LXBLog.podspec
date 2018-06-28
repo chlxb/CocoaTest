@@ -29,10 +29,10 @@ Pod::Spec.new do |s|
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
-  s.source       = { :git => "https://github.com/chlxb/CocoaTest.git" :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/chlxb/CocoaTest.git", :tag => "#{s.version}" }
 	s.swift_version = '4.2'
 	s.source_files = 'Log/Classes/*.swift'
-	s.public_header_files = 'LogFramework/*.h'
+	# s.public_header_files = 'LogFramework/LogFramework.h'
 	s.static_framework = true
   # s.public_header_files = "Classes/**/*.h"
 
