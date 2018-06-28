@@ -13,7 +13,35 @@
 		ED94060B20E4D85C002BA454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED94060A20E4D85C002BA454 /* Assets.xcassets */; };
 		ED94060E20E4D85C002BA454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED94060C20E4D85C002BA454 /* LaunchScreen.storyboard */; };
 		ED94061720E4D93A002BA454 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94061620E4D93A002BA454 /* Log.swift */; };
+		ED94065A20E4DF82002BA454 /* LogLib.h in Headers */ = {isa = PBXBuildFile; fileRef = ED94065820E4DF82002BA454 /* LogLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED94065D20E4DF82002BA454 /* LogLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED94065620E4DF82002BA454 /* LogLib.framework */; };
+		ED94065E20E4DF82002BA454 /* LogLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED94065620E4DF82002BA454 /* LogLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED94066420E4E05E002BA454 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94061620E4D93A002BA454 /* Log.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED94065B20E4DF82002BA454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED9405F820E4D85B002BA454 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED94065520E4DF82002BA454;
+			remoteInfo = LogLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED94062920E4DC8C002BA454 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED94065E20E4DF82002BA454 /* LogLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ED94060020E4D85B002BA454 /* Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Log.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,23 @@
 		ED94060D20E4D85C002BA454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED94060F20E4D85D002BA454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED94061620E4D93A002BA454 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		ED94061F20E4DC8C002BA454 /* LogLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogLib.h; sourceTree = "<group>"; };
+		ED94062020E4DC8C002BA454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED94065620E4DF82002BA454 /* LogLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED94065820E4DF82002BA454 /* LogLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogLib.h; sourceTree = "<group>"; };
+		ED94065920E4DF82002BA454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ED9405FD20E4D85B002BA454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED94065D20E4DF82002BA454 /* LogLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED94065220E4DF82002BA454 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				ED94060220E4D85B002BA454 /* Log */,
+				ED94061E20E4DC8C002BA454 /* LogLib */,
+				ED94065720E4DF82002BA454 /* LogLib */,
 				ED94060120E4D85B002BA454 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				ED94060020E4D85B002BA454 /* Log.app */,
+				ED94065620E4DF82002BA454 /* LogLib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,7 +119,36 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		ED94061E20E4DC8C002BA454 /* LogLib */ = {
+			isa = PBXGroup;
+			children = (
+				ED94061F20E4DC8C002BA454 /* LogLib.h */,
+				ED94062020E4DC8C002BA454 /* Info.plist */,
+			);
+			path = LogLib;
+			sourceTree = "<group>";
+		};
+		ED94065720E4DF82002BA454 /* LogLib */ = {
+			isa = PBXGroup;
+			children = (
+				ED94065820E4DF82002BA454 /* LogLib.h */,
+				ED94065920E4DF82002BA454 /* Info.plist */,
+			);
+			path = LogLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ED94065320E4DF82002BA454 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED94065A20E4DF82002BA454 /* LogLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		ED9405FF20E4D85B002BA454 /* Log */ = {
@@ -85,15 +158,35 @@
 				ED9405FC20E4D85B002BA454 /* Sources */,
 				ED9405FD20E4D85B002BA454 /* Frameworks */,
 				ED9405FE20E4D85B002BA454 /* Resources */,
+				ED94062920E4DC8C002BA454 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ED94065C20E4DF82002BA454 /* PBXTargetDependency */,
 			);
 			name = Log;
 			productName = Log;
 			productReference = ED94060020E4D85B002BA454 /* Log.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ED94065520E4DF82002BA454 /* LogLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED94065F20E4DF82002BA454 /* Build configuration list for PBXNativeTarget "LogLib" */;
+			buildPhases = (
+				ED94065120E4DF82002BA454 /* Sources */,
+				ED94065220E4DF82002BA454 /* Frameworks */,
+				ED94065320E4DF82002BA454 /* Headers */,
+				ED94065420E4DF82002BA454 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogLib;
+			productName = LogLib;
+			productReference = ED94065620E4DF82002BA454 /* LogLib.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +199,9 @@
 				ORGANIZATIONNAME = lxb;
 				TargetAttributes = {
 					ED9405FF20E4D85B002BA454 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					ED94065520E4DF82002BA454 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -124,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				ED9405FF20E4D85B002BA454 /* Log */,
+				ED94065520E4DF82002BA454 /* LogLib */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +233,13 @@
 				ED94060E20E4D85C002BA454 /* LaunchScreen.storyboard in Resources */,
 				ED94060B20E4D85C002BA454 /* Assets.xcassets in Resources */,
 				ED94060920E4D85B002BA454 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED94065420E4DF82002BA454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +256,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED94065120E4DF82002BA454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED94066420E4E05E002BA454 /* Log.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED94065C20E4DF82002BA454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED94065520E4DF82002BA454 /* LogLib */;
+			targetProxy = ED94065B20E4DF82002BA454 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ED94060720E4D85B002BA454 /* Main.storyboard */ = {
@@ -231,6 +351,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -284,6 +405,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -291,6 +413,7 @@
 		ED94061320E4D85D002BA454 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22WQV8Z7ST;
@@ -310,6 +433,7 @@
 		ED94061420E4D85D002BA454 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22WQV8Z7ST;
@@ -323,6 +447,66 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED94066020E4DF82002BA454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 22WQV8Z7ST;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LogLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxb.swift.LogLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED94066120E4DF82002BA454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 22WQV8Z7ST;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LogLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxb.swift.LogLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -343,6 +527,15 @@
 			buildConfigurations = (
 				ED94061320E4D85D002BA454 /* Debug */,
 				ED94061420E4D85D002BA454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED94065F20E4DF82002BA454 /* Build configuration list for PBXNativeTarget "LogLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED94066020E4DF82002BA454 /* Debug */,
+				ED94066120E4DF82002BA454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
