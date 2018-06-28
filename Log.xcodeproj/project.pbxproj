@@ -12,7 +12,36 @@
 		EDB5C91120E4802700EDFF91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB5C90F20E4802700EDFF91 /* Main.storyboard */; };
 		EDB5C91320E4802800EDFF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB5C91220E4802800EDFF91 /* Assets.xcassets */; };
 		EDB5C91620E4802800EDFF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB5C91420E4802800EDFF91 /* LaunchScreen.storyboard */; };
+		EDB5C91E20E4806D00EDFF91 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5C91D20E4806D00EDFF91 /* Log.swift */; };
+		EDB5C93420E482A700EDFF91 /* LogFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB5C93220E482A700EDFF91 /* LogFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDB5C93720E482A700EDFF91 /* LogFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB5C93020E482A700EDFF91 /* LogFramework.framework */; };
+		EDB5C93820E482A700EDFF91 /* LogFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDB5C93020E482A700EDFF91 /* LogFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDB5C93D20E482CA00EDFF91 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5C91D20E4806D00EDFF91 /* Log.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDB5C93520E482A700EDFF91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDB5C90020E4802700EDFF91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDB5C92F20E482A700EDFF91;
+			remoteInfo = LogFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDB5C93C20E482A700EDFF91 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EDB5C93820E482A700EDFF91 /* LogFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EDB5C90820E4802700EDFF91 /* Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Log.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +51,22 @@
 		EDB5C91220E4802800EDFF91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB5C91520E4802800EDFF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDB5C91720E4802800EDFF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB5C91D20E4806D00EDFF91 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		EDB5C93020E482A700EDFF91 /* LogFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB5C93220E482A700EDFF91 /* LogFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogFramework.h; sourceTree = "<group>"; };
+		EDB5C93320E482A700EDFF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EDB5C90520E4802700EDFF91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB5C93720E482A700EDFF91 /* LogFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB5C92D20E482A700EDFF91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,10 +76,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED01E44620E48F7200AA9252 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EDB5C91D20E4806D00EDFF91 /* Log.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		EDB5C8FF20E4802700EDFF91 = {
 			isa = PBXGroup;
 			children = (
 				EDB5C90A20E4802700EDFF91 /* Log */,
+				EDB5C93120E482A700EDFF91 /* LogFramework */,
 				EDB5C90920E4802700EDFF91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EDB5C90820E4802700EDFF91 /* Log.app */,
+				EDB5C93020E482A700EDFF91 /* LogFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +105,7 @@
 		EDB5C90A20E4802700EDFF91 /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				ED01E44620E48F7200AA9252 /* Classes */,
 				EDB5C90B20E4802700EDFF91 /* AppDelegate.swift */,
 				EDB5C90D20E4802700EDFF91 /* ViewController.swift */,
 				EDB5C90F20E4802700EDFF91 /* Main.storyboard */,
@@ -64,7 +116,27 @@
 			path = Log;
 			sourceTree = "<group>";
 		};
+		EDB5C93120E482A700EDFF91 /* LogFramework */ = {
+			isa = PBXGroup;
+			children = (
+				EDB5C93220E482A700EDFF91 /* LogFramework.h */,
+				EDB5C93320E482A700EDFF91 /* Info.plist */,
+			);
+			path = LogFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EDB5C92B20E482A700EDFF91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB5C93420E482A700EDFF91 /* LogFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		EDB5C90720E4802700EDFF91 /* Log */ = {
@@ -74,15 +146,35 @@
 				EDB5C90420E4802700EDFF91 /* Sources */,
 				EDB5C90520E4802700EDFF91 /* Frameworks */,
 				EDB5C90620E4802700EDFF91 /* Resources */,
+				EDB5C93C20E482A700EDFF91 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EDB5C93620E482A700EDFF91 /* PBXTargetDependency */,
 			);
 			name = Log;
 			productName = Log;
 			productReference = EDB5C90820E4802700EDFF91 /* Log.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EDB5C92F20E482A700EDFF91 /* LogFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB5C93920E482A700EDFF91 /* Build configuration list for PBXNativeTarget "LogFramework" */;
+			buildPhases = (
+				EDB5C92B20E482A700EDFF91 /* Headers */,
+				EDB5C92C20E482A700EDFF91 /* Sources */,
+				EDB5C92D20E482A700EDFF91 /* Frameworks */,
+				EDB5C92E20E482A700EDFF91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogFramework;
+			productName = LogFramework;
+			productReference = EDB5C93020E482A700EDFF91 /* LogFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +187,9 @@
 				ORGANIZATIONNAME = lxb;
 				TargetAttributes = {
 					EDB5C90720E4802700EDFF91 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					EDB5C92F20E482A700EDFF91 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -113,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				EDB5C90720E4802700EDFF91 /* Log */,
+				EDB5C92F20E482A700EDFF91 /* LogFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +224,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDB5C92E20E482A700EDFF91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,10 +240,27 @@
 			files = (
 				EDB5C90E20E4802700EDFF91 /* ViewController.swift in Sources */,
 				EDB5C90C20E4802700EDFF91 /* AppDelegate.swift in Sources */,
+				EDB5C91E20E4806D00EDFF91 /* Log.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB5C92C20E482A700EDFF91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB5C93D20E482CA00EDFF91 /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDB5C93620E482A700EDFF91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDB5C92F20E482A700EDFF91 /* LogFramework */;
+			targetProxy = EDB5C93520E482A700EDFF91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EDB5C90F20E4802700EDFF91 /* Main.storyboard */ = {
@@ -279,8 +399,10 @@
 		EDB5C91B20E4802800EDFF91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5XW5NM586;
 				INFOPLIST_FILE = Log/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,8 +418,10 @@
 		EDB5C91C20E4802800EDFF91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5XW5NM586;
 				INFOPLIST_FILE = Log/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +431,66 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDB5C93A20E482A700EDFF91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T5XW5NM586;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LogFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxb.swift.LogFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDB5C93B20E482A700EDFF91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T5XW5NM586;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LogFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxb.swift.LogFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -327,6 +511,15 @@
 			buildConfigurations = (
 				EDB5C91B20E4802800EDFF91 /* Debug */,
 				EDB5C91C20E4802800EDFF91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB5C93920E482A700EDFF91 /* Build configuration list for PBXNativeTarget "LogFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB5C93A20E482A700EDFF91 /* Debug */,
+				EDB5C93B20E482A700EDFF91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
