@@ -32,7 +32,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/chlxb/CocoaTest.git" :tag => s.version }
 	s.swift_version = '4.2'
 	s.source_files = 'Log/Classes/*.swift'
-
+	s.public_header_files = 'LogFramework/*.h'
+	s.static_framework = true
   # s.public_header_files = "Classes/**/*.h"
 
 
