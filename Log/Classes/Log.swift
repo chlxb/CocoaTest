@@ -12,7 +12,7 @@ public enum LogLevel: String {
     case none = "none", warning = "warning", error = "error", verbose = "verbose"
 }
 
-open class Log {
+public class Log {
     public static var level: LogLevel = .none
     public static func log(_ message: String, level: LogLevel) {
         guard level != .none else { return }
