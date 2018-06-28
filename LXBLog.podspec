@@ -9,16 +9,16 @@
 Pod::Spec.new do |s|
   s.name         = "LXBLog"
   s.version      = "0.0.1"
-  s.summary      = "A short description of LXBLog."
+  s.summary      = "Elegant HTTP Networking in Swift"
 
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  # s.description  = <<-DESC
+  #                DESC
 
-  s.homepage     = "http://EXAMPLE/LXBLog"
-  s.license      = "MIT (example)"
+  s.homepage     = "https://github.com/chlxb/CocoaTest"
+  s.license      = "MIT"
 
   s.author             = { "liuxiaobing" => "ch_lxb@163.com" }
   s.platform     = :ios, "9.0"
@@ -29,9 +29,9 @@ Pod::Spec.new do |s|
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
-  s.source       = { :git => "http://EXAMPLE/LXBLog.git", :tag => "#{s.version}" }
-
-	s.source_files = 'Log/*.swift'
+  s.source       = { :git => "https://github.com/chlxb/CocoaTest.git", :tag => "#{s.version}" }
+	s.swift_version = '4.2'
+	s.source_files = 'Log/Classes/*.swift'
 
   # s.public_header_files = "Classes/**/*.h"
 
