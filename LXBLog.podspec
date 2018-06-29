@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "LXBLog"
-  s.version      = "0.0.7"
+  s.version      = "1.0.0"
   s.summary      = "Elegant HTTP Networking in Swift"
 
   #   * Try to keep it short, snappy and to the point.

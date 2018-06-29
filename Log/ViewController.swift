@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        Log.level = .warning
+        Log.tokenStatus()
+        Log.requeestWeather()
     }
 
     override func didReceiveMemoryWarning() {
